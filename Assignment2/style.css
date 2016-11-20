@@ -61,7 +61,7 @@ main h5
 }
 .steps
 {
-	flex-basis : 30%;
+	flex-basis : 100%;
 	margin : 10px;
 	box-shadow : 2px 3px 3px 2px rgb(102, 102, 102);
 	border-color : #666666;
@@ -70,7 +70,7 @@ main h5
 	transition-duration : 2s;
 	-webkit-transition-duration : 2s;
 	height : auto;
-	width : auto;
+	width : 100%;
 	background-color : rgb(242, 242, 242);
 	padding-bottom : 15px;
 	text-align : center;
