@@ -11,7 +11,7 @@ function changePrice(){
 	if (document.getElementById('Ham').checked){
 		toppings+=1;
 	}else{};
-	if (document.getElementById('Cheese')checked){
+	if (document.getElementById('Cheese').checked){
 		toppings+=1;
 	}else{};
 	if (document.getElementById('Chicken').checked){
@@ -95,7 +95,7 @@ function changePrice(){
 	if (document.getElementById('DoubleSweetcorn').checked){
 		doubleTop+=1;
 	}else{};
-	if (document.getElementById('DoubleBacon'.checked){
+	if (document.getElementById('DoubleBacon').checked){
 		doubleTop+=1;
 	}else{};
 	if (document.getElementById('DoublePineapple').checked){
