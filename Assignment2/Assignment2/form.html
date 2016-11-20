@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<LINK rel="stylesheet" type="text/css" href="style.css">
+		<meta name="viewport" content="width=device-width" />
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1>Pizza</h2>
+		</header>
+		<nav>
+		</nav>
+		<main>
+			<div class="banner">
+				
+					<div class="buildtop">
+						<h3>Build your own Pizza</h3>
+					</div>
+				
+			</div>	
+				<form name="myForm" id="form1" action="http://atlantis.cit.ie/displayvalues.php" value="submit" method="get">
+					<div class="steps" id="greenstep">
+						<h5>Step I</h5>
+						<p>Choose what size</p>
+						<p>& base.</p>
+						<select id="base_size" name="baseSize">
+							<option value="Personal_7">Personal Pizza(7inch)&euro;4.35</option>
+							<option value="Small_9">Small(9inch)&euro;7.20</option>
+							<option value="Medium_12">Medium(12inch)&euro;11.55</option>
+							<option value="Large_16">Large(16inch)&euro;14.40</option>
+							<option value="XtraLarge_20">Xtra Large(20inch)&euro;22.60</option>
+						</select>
+						<select id="base_type" name="baseType">
+							<option value="Thick">Thick Base</option>
+							<option value="Thin">Thin Base</option>
+							<option value="cheeseStuffed">Cheese Stuffed Crust &euro;3.00</option>
+						</select>
+					</div>
+					
+					<div class="steps" id="whitestep">
+						<h5>Step II</h5>
+						<p>Select Toppings</p>
+						<table id="toppingsTable">
+							<tr>
+								<th>Meat Topping</th>
+								<th>Yes</th>
+								<th>No</th>
+								<th>Extra</th>
+							
+								<th>Other Toppings</th>
+								<th>Yes</th>
+								<th>No</th>
+								<th>Extra</th>
+							</tr>
+							
+							<tr>
+								<td>Ham</td>
+								<td class="topping" id="SingleHam"><input type="checkbox" name="Ham" Value="Yes" id="Ham"></td>
+								
+								<td class="topping" id="doubleHam"><input type="checkbox" name="hamAmount" Value="DoubleHam" id="DoubleHam"></td>
+							
+								<td>Cheese</td>
+								<td class="topping"><input type="checkbox" name="Cheese" Value="Single" id="Cheese" checked></td>
+								
+								<td class="topping"><input type="checkbox" name="CheeseAmount" Value="Double" id="DoubleCheese"></td>
+							</tr>
+							<tr>
+								<td>Chicken</td>
+								<td class="topping" id="SingleChicken"><input type="checkbox" name="Chicken" Value="Yes" id="Chicken"></td>
+								
+								<td class="topping" id="doubleChicken"><input type="checkbox" name="ChickenAmount" Value="DoubleChicken" id="DoubleChicken"></td>
+								
+								<td>Mushroom</td>
+								<td class="topping" id="SingleMushroom"><input type="checkbox" name="Mushroom" Value="Yes" id="Mushroom"></td>
+								
+								<td class="topping" id="doubleMushroom"><input type="checkbox" name="MushroomAmount" Value="Double" id="DoubleMushroom"></td>
+							</tr>
+							<tr>
+								<td>Tuna</td>
+								<td class="topping" id="SingleTuna"><input type="checkbox" name="Tuna" Value="Yes" id="Tuna"></td>
+								
+								<td class="topping" id="doubleTuna"><input type="checkbox" name="TunaAmount" Value="DoubleTuna" id="DoubleTuna"></td>
+								
+								<td>Onion</td>
+								<td class="topping" id="SingleOnion"><input type="checkbox" name="Onion" Value="Yes" id="Onion"></td>
+								
+								<td class="topping" id="doubleOnion"><input type="checkbox" name="OnionAmount" Value="DoubleOnion" id="DoubleOnion"></td>
+							</tr>
+							<tr>
+								<td>Salami</td>
+								<td class="topping" id="SingleSalami"><input type="checkbox" name="Salami" Value="Yes" id="Salami"></td>
+								
+								<td class="topping" id="doubleSalami"><input type="checkbox" name="SalamiAmount" Value="DoubleSalami" id="DoubleSalami"></td>
+								
+								<td>Sweetcorn</td>
+								<td class="topping" id="SingleSweetcorn"><input type="checkbox" name="Sweetcorn" Value="Yes" id="Sweetcorn"></td>
+								
+								<td class="topping" id="doubleSweetcorn"><input type="checkbox" name="SweetcornAmount" Value="DoubleSweetcorn" id="DoubleSweetcorn"></td>
+							</tr>
+							<tr>
+								<td>Bacon</td>
+								<td class="topping" id="SingleBacon"><input type="checkbox" name="Bacon" Value="Yes" id="Bacon"></td>
+								
+								<td class="topping" id="doubleBacon"><input type="checkbox" name="BaconAmount" Value="DoubleBacon" id="DoubleBacon"></td>
+								
+								<td>Pineapple</td>
+								<td class="topping" id="SinglePineapple"><input type="checkbox" name="Pineapple" Value="Yes" id="Pineapple"></td>
+								
+								<td class="topping" id="doublePineapple"><input type="checkbox" name="PineappleAmount" Value="DoublePineapple" id="DoublePineapple"></td>
+							</tr>
+							<tr>
+								<td>Anchovies</td>
+								<td class="topping" id="SingleAnchovies"><input type="checkbox" name="Anchovies" Value="Yes" id="Anchovies"></td>
+								
+								<td class="topping" id="doubleAnchovies"><input type="checkbox" name="AnchoviesAmount" Value="DoubleAnchovies" id="DoubleAnchovies"></td>
+								
+								<td>Mixed Peppers</td>
+								<td class="topping" id="SingleMixedPeppers"><input type="checkbox" name="MixedPeppers" Value="Yes" id="MixedPeppers"></td>
+								
+								<td class="topping" id="doubleMixedPeppers"><input type="checkbox" name="MixedPeppersAmount" Value="DoubleMixedPeppers" id="DoubleMixedPeppers"></td>
+							</tr>
+							<tr>
+								<td>Spicy Beef</td>
+								<td class="topping" id="SingleSpicyBeef"><input type="checkbox" name="SpicyBeef" Value="Yes" id="SpicyBeef"></td>
+								
+								<td class="topping" id="doubleSpicyBeef"><input type="checkbox" name="SpicyBeefAmount" Value="DoubleSpicyBeef" id="DoubleSpicyBeef"></td>
+								
+								<td>Tomato</td>
+								<td class="topping" id="SingleTomato"><input type="checkbox" name="Tomato" Value="Yes" id="Tomato"></td>
+
+								<td class="topping" id="doubleTomato"><input type="checkbox" name="TomatoAmount" Value="DoubleTomato" id="DoubleTomato"></td>
+							</tr>
+							<tr>
+								<td>Pepperoni</td>
+								<td class="topping" id="SinglePepperoni"><input type="checkbox" name="Pepperoni" Value="Yes" id="Pepperoni"></td>
+								
+								<td class="topping" id="doublePepperoni"><input type="checkbox" name="PepperoniAmount" Value="DoublePepperoni" id="DoublePepperoni"></td>
+								
+								<td>Jalepenos</td>
+								<td class="topping" id="SingleJalepenos"><input type="checkbox" name="Jalepenos" Value="Yes" id="Jalepenos"></td>
+								
+								<td class="topping" id="doubleJalepenos"><input type="checkbox" name="JalepenosAmount" Value="DoubleJalepenos" id="DoubleJalepenos"></td>
+							</tr>
+							<tr>
+								<td>Beef Bites</td>
+								<td class="topping" id="SingleBeefBites"><input type="checkbox" name="BeefBites" Value="Yes" id="BeefBites"></td>
+								
+								<td class="topping" id="doubleBeefBites"><input type="checkbox" name="BeefBitesAmount" Value="DoubleBeefBites" id="DoubleBeefBites"></td>
+								
+								<td>Red Peppers</td>
+								<td class="topping" id="SingleRedPeppers"><input type="checkbox" name="RedPeppers" Value="Yes" id="RedPeppers"></td>
+								
+								<td class="topping" id="doubleRedPeppers"><input type="checkbox" name="RedPeppersAmount" Value="DoubleRedPeppers" id="DoubleRedPeppers"></td>
+							</tr>
+							<tr>
+								<td>Meatballs</td>
+								<td class="topping" id="SingleMeatballs"><input type="checkbox" name="Meatballs" Value="Yes" id="Meatballs"></td>
+								
+								<td class="topping" id="doubleMeatballs"><input type="checkbox" name="MeatballsAmount" Value="DoubleMeatballs" id="DoubleMeatballs"></td>
+								
+								<td>Chilli Flakes</td>
+								<td class="topping" id="SingleChilliFlakes"><input type="checkbox" name="ChilliFlakes" Value="Yes" id="ChilliFlakes"></td>
+								
+								<td class="topping" id="doubleChilliFlakes"><input type="checkbox" name="ChilliFlakesAmount" Value="DoubleChilliFlakes" id="DoubleChilliFlakes"></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td>Garlic</td>
+								<td class="topping" id="SingleGarlic"><input type="checkbox" name="Garlic" Value="Yes" id="Garlic"></td>
+								<td class="topping" id="NoGarlic"><input type="checkbox" name="Garlic" Value="No" id="NoGarlic" Checked></td>
+								<td class="topping" id="doubleGarlic"><input type="checkbox" name="GarlicAmount" Value="DoubleGarlic" id="DoubleGarlic"></td>
+							</tr>
+						</table>
+					</div>
+					
+					<div class="steps" id="redstep"
+						<h5>Step III</h5>
+						<p>Order and enjoy</p>
+					</div>
+				</form>
+				
+			
+			<div class="outerLarge">
+				<div id="innerOne" class="innersection">
+				</div>
+				<div id="innerTwo" class="innersection">
+				</div>
+			</div>
+			<div class="banner">
+				<div class="innersection">
+				</div>
+			</div>
+			<script type="text/javascript" src="js/calculate.js" >
+			</script>
+		</main>
+	</body>
+	<footer>
+	</footer>
+</html>
