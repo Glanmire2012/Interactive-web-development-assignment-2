@@ -8,168 +8,130 @@ function changePrice(){
 	var toppings = 0;
 	var doubleTop = 0;
 	
-	var elCheese = document.getElementById('Cheese');
-	var elChicken = document.getElementById('Chicken');
-	var elMushroom = document.getElementById('Mushroom');
-	var elTuna = document.getElementById('Tuna');
-	var elOnion = document.getElementById('Onion');
-	var elSalami = document.getElementById('Salami');
-	var elSweetcorn = document.getElementById('Sweetcorn');
-	var elBacon = document.getElementById('Bacon');
-	var elPineapple = document.getElementById('Pineapple');
-	var elAnchovies = document.getElementById('Anchovies');
-	var elMixedPeppers = document.getElementById('MixedPeppers');
-	var elSpicyBeef = document.getElementById('SpicyBeef');
-	var elTomato = document.getElementById('Tomato');
-	var elPepperoni = document.getElementById('Pepperoni');
-	var elJalepenos = document.getElementById('Jalepenos');
-	var elBeefBites = document.getElementById('BeefBites');
-	var elRedPeppers = document.getElementById('RedPeppers');
-	var elMeatballs = document.getElementById('Meatballs');
-	var elChilliFlakes = document.getElementById('ChilliFlakes');
-	var elGarlic = document.getElementById('Garlic');
-	var elDoubleHam = document.getElementById('DoubleHam');
-	var elDoubleCheese = document.getElementById('DoubleCheese');
-	var elDoubleChicken = document.getElementById('DoubleChicken');
-	var elDoubleMushroom = document.getElementById('DoubleMushroom');
-	var elDoubleTuna = document.getElementById('DoubleTuna');
-	var elDoubleOnion = document.getElementById('DoubleOnion');
-	var elDoubleSalami = document.getElementById('DoubleSalami');
-	var elDoubleSweetcorn = document.getElementById('DoubleSweetcorn');
-	var elDoubleBacon = document.getElementById('DoubleBacon');
-	var elDoublePineapple = document.getElementById('DoublePineapple');
-	var elDoubleAnchovies = document.getElementById('DoubleAnchovies');
-	var elDoubleMixedPeppers = document.getElementById('DoubleMixedPeppers');
-	var elDoubleSpicyBeef = document.getElementById('DoubleSpicyBeef');
-	var elDoubleTomato = document.getElementById('DoubleTomato');
-	var elDoublePepperoni = document.getElementById('DoublePepperoni');
-	var elDoubleJalepenos = document.getElementById('DoubleJalepenos');
-	var elDoubleBeefBites = document.getElementById('DoubleBeefBites');
-	var elDoubleRedPeppers = document.getElementById('DoubleRedPeppers');
-	var elDoubleMeatballs = document.getElementById('DoubleMeatballs');
-	var elDoubleChilliFlakes = document.getElementById('DoubleChilliFlakes');
-	var elDoubleGarlic = document.getElementById('DoubleGarlic');
 	if (document.getElementById('Ham').checked){
 		toppings+=1;
 	}else{};
-	if (elCheese.checked){
+	if (document.getElementById('Cheese').checked){
 		toppings+=1;
 	}else{};
-	if (elChicken.checked){
+	if (document.getElementById('Chicken').checked){
 		toppings+=1;
 	}else{};
-	if (elMushroom.checked){
+	if (document.getElementById('Mushroom').checked){
 		toppings+=1;
 	}else{};
-	if (elTuna.checked){
+	if (document.getElementById('Tuna').checked){
 		toppings+=1;
 	}else{};
-	if (elOnion.checked){
+	if (document.getElementById('Onion').checked){
 		toppings+=1;
 	}else{};
-	if (elSalami.checked){
+	if (document.getElementById('Salami').checked){
 		toppings+=1;
 	}else{};
-	if (elSweetcorn.checked){
+	if (document.getElementById('Sweetcorn').checked){
 		toppings+=1;
 	}else{};
-	if (elBacon.checked){
+	if (document.getElementById('Bacon').checked){
 		toppings+=1;
 	}else{};
-	if (elPineapple.checked){
+	if (document.getElementById('Pineapple').checked){
 		toppings+=1;
 	}else{};
-	if (elAnchovies.checked){
+	if (document.getElementById('Anchovies').checked){
 		toppings+=1;
 	}else{};
-	if (elMixedPeppers.checked){
+	if (document.getElementById('MixedPeppers').checked){
 		toppings+=1;
 	}else{};
-	if (elSpicyBeef.checked){
+	if (document.getElementById('SpicyBeef').checked){
 		toppings+=1;
 	}else{};
-	if (elTomato.checked){
+	if (document.getElementById('Tomato').checked){
 		toppings+=1;
 	}else{};
-	if (elPepperoni.checked){
+	if (document.getElementById('Pepperoni').checked){
 		toppings+=1;
 	}else{};
-	if (elJalepenos.checked){
+	if (document.getElementById('Jalepenos').checked){
 		toppings+=1;
 	}else{};
-	if (elBeefBites.checked){
+	if (document.getElementById('BeefBites').checked){
 		toppings+=1;
 	}else{};
-	if (elRedPeppers.checked){
+	if (document.getElementById('RedPeppers').checked){
 		toppings+=1;
 	}else{};
-	if (elMeatballs.checked){
+	if (document.getElementById('Meatballs').checked){
 		toppings+=1;
 	}else{};
-	if (elChilliFlakes.checked){
+	if (document.getElementById('ChilliFlakes').checked){
 		toppings+=1;
 	}else{};
-	if (elGarlic.checked){
+	if (document.getElementById('Garlic').checked){
 		toppings+=1;
 	}else{};
-	if (elDoubleHam.checked){
+	if (document.getElementById('DoubleHam').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleCheese.checked){
+	if (document.getElementById('DoubleCheese').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleChicken.checked){
+	if (document.getElementById('DoubleChicken').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleMushroom.checked){
+	if (document.getElementById('DoubleMushroom').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleTuna.checked){
+	if (document.getElementById('DoubleTuna').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleOnion.checked){
+	if (document.getElementById('DoubleOnion').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleSalami.checked){
+	if (document.getElementById('DoubleSalami').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleSweetcorn.checked){
+	if (document.getElementById('DoubleSweetcorn').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleBacon.checked){
+	if (document.getElementById('DoubleBacon').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoublePineapple.checked){
+	if (document.getElementById('DoublePineapple').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleAnchovies.checked){
+	if (document.getElementById('DoubleAnchovies').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleMixedPeppers.checked){
+	if (document.getElementById('DoubleMixedPeppers').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleSpicyBeef .checked){
+	if (document.getElementById('DoubleSpicyBeef').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleTomato.checked){
+	if (document.getElementById('DoubleTomato').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoublePepperoni.checked){
+	if (document.getElementById('DoublePepperoni').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleBeefBites.checked){
+	if (document.getElementById('DoubleJalepenos').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleRedPeppers.checked){
+	if (document.getElementById('DoubleBeefBites').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleMeatballs.checked){
+	if (document.getElementById('DoubleRedPeppers').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleChilliFlakes.checked){
+	if (document.getElementById('DoubleMeatballs').checked){
 		doubleTop+=1;
 	}else{};
-	if (elDoubleGarlic.checked){
+	if (document.getElementById('DoubleChilliFlakes').checked){
+		doubleTop+=1;
+	}else{};
+	if (document.getElementById('DoubleGarlic').checked){
 		doubleTop+=1;
 	}else{};
 	alert(doubleTop);
