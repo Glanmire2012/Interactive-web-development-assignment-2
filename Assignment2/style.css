@@ -12,6 +12,7 @@ html
 	min-height : 100%;
 	background-image: url("images/pizza.bmp");
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	color : rgb(64, 64, 64);
 }
 header h1
@@ -20,6 +21,7 @@ header h1
 	text-shadow: 0 0 0.2em #8F7, 0 0 0.2em #8F7;
 	font-size : 60px;
 	text-align : center;
+	
 }
 main h3
 {
@@ -34,35 +36,37 @@ main h5
 	text-align : center;
 	margin-top : 5px;
 	margin-bottom: 5px;
-}	
-.innersection
+}
+section
 {
-	margin : 10px;
-	box-shadow : 2px 3px 3px 2px rgb(102, 102, 102);
-	border-color : #666666;
-	border-width : 1px;
-	border-style : solid;
-	transition-duration : 2s;
-	-webkit-transition-duration : 2s;
-	height : auto;
-	width : auto;
-	background-color : rgb(242, 242, 242);
-	padding-bottom : 15px;
+	width : 100%;
+}	
+form
+{
+	width : 100%;
 	display : flex;
 	flex-flow : row wrap;
+}
+table
+{
+	width : 60%;
+	margin : auto;
+	font-family : Arial;
+	font-size : 16px;
+}
+.hidden
+{
+	display : none;
 }
 .banner
 {
-	flex-basis : 100%;
-	display : flex;
-	flex-flow : row wrap;
+	
 	height : 150px;
-	width : auto;
+	width : 100%;
 }
 .steps
 {
-	flex-basis : 100%;
-	margin : 10px;
+	margin : 5px;
 	box-shadow : 2px 3px 3px 2px rgb(102, 102, 102);
 	border-color : #666666;
 	border-width : 1px;
@@ -75,6 +79,7 @@ main h5
 	padding-bottom : 15px;
 	text-align : center;
 	opacity : 0.9;
+	font-size : 10px;
 }
 .responsiveimage
 {
@@ -83,36 +88,26 @@ main h5
 	margin : auto;
 }
 
-.outerLarge
-{
-	flex-basis : 100%;
-	display : flex;
-}
+
 .buildtop
 {
 	text-align : center;
 	text-shadow: 0 0 0.2em #8F7, 0 0 0.2em #8F7, 0 0 0.2em #8F7;
 	margin : 10px;
 	height : 50px;
-	width : auto;
+	width : 100%;
 	flex-basis : 100%;
 
 }
-#innerOne, #innerTwo
+#greenOuter
 {
-	opacity : 0.3;
-	min-height : 150px;
+	flex-basis : 50%;
 }
-#innerOne
+#whiteOuter
 {
-	flex-basis : 40%;
-	opacity : 0.7;
+	flex-basis : 50%;
 }
-#innerTwo
-{
-	flex-basis : 60%;
-}
-#
+#redOuter
 {
 	flex-basis : 100%;
 }
@@ -134,11 +129,7 @@ main h5
 	{
 		width : 80%;
 	}
-	.outerLarge
-	{
-		flex-basis : 100%;
-	}
-	.steps
+	#greenOuter, #whiteOuter, #redOuter
 	{
 		flex-basis : 100%;
 	}
@@ -149,10 +140,6 @@ main h5
 	main
 	{
 		width : 80%;
-	}
-	.outerLarge
-	{
-		flex-basis : 100%;
 	}
 	.steps
 	{

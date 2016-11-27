@@ -1,16 +1,27 @@
 //r00038222
 var elTopping = document.getElementsByClassName('topping');
-
-
+var viewDoubleHam, hamFiller,
+viewDoubleHam = document.getElementById('doubleHam').classList;
+hamFiller = document.getElementById('hamFiller').classList;
 var total=0.00;
 var check=false;
 function changePrice(){
 	var toppings = 0;
 	var doubleTop = 0;
+	var price=0.00;
+	var total =document.getElementById('price')
 	
+	if (document.getElementsByName('BaseType').value == 'Stuffed'){
+		price+=2.5;
+	}else{};
 	if (document.getElementById('Ham').checked){
 		toppings+=1;
-	}else{};
+		if (viewDoubleHam.contains('hidden')){
+			viewDoubleHam.remove('hidden');
+			hamFiller.add('hidden');
+		}else{};
+	}else{viewDoubleHam.add('hidden');
+			hamFiller.remove('hidden');};
 	if (document.getElementById('Cheese').checked){
 		toppings+=1;
 	}else{};
@@ -18,9 +29,6 @@ function changePrice(){
 		toppings+=1;
 	}else{};
 	if (document.getElementById('Mushroom').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('Tuna').checked){
 		toppings+=1;
 	}else{};
 	if (document.getElementById('Onion').checked){
@@ -41,36 +49,13 @@ function changePrice(){
 	if (document.getElementById('Anchovies').checked){
 		toppings+=1;
 	}else{};
-	if (document.getElementById('MixedPeppers').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('SpicyBeef').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('Tomato').checked){
-		toppings+=1;
-	}else{};
 	if (document.getElementById('Pepperoni').checked){
 		toppings+=1;
 	}else{};
 	if (document.getElementById('Jalepenos').checked){
 		toppings+=1;
 	}else{};
-	if (document.getElementById('BeefBites').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('RedPeppers').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('Meatballs').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('ChilliFlakes').checked){
-		toppings+=1;
-	}else{};
-	if (document.getElementById('Garlic').checked){
-		toppings+=1;
-	}else{};
+	
 	if (document.getElementById('DoubleHam').checked){
 		doubleTop+=1;
 	}else{};
@@ -81,9 +66,6 @@ function changePrice(){
 		doubleTop+=1;
 	}else{};
 	if (document.getElementById('DoubleMushroom').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleTuna').checked){
 		doubleTop+=1;
 	}else{};
 	if (document.getElementById('DoubleOnion').checked){
@@ -104,36 +86,16 @@ function changePrice(){
 	if (document.getElementById('DoubleAnchovies').checked){
 		doubleTop+=1;
 	}else{};
-	if (document.getElementById('DoubleMixedPeppers').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleSpicyBeef').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleTomato').checked){
-		doubleTop+=1;
-	}else{};
 	if (document.getElementById('DoublePepperoni').checked){
 		doubleTop+=1;
 	}else{};
 	if (document.getElementById('DoubleJalepenos').checked){
 		doubleTop+=1;
 	}else{};
-	if (document.getElementById('DoubleBeefBites').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleRedPeppers').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleMeatballs').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleChilliFlakes').checked){
-		doubleTop+=1;
-	}else{};
-	if (document.getElementById('DoubleGarlic').checked){
-		doubleTop+=1;
-	}else{};
+	
+	price = (1.50*toppings)+(0.60*doubleTop);
+	return total.innerHTML="Your price is "+price.toFixed(2);
+	
 	alert(doubleTop);
 	alert(toppings);
 
